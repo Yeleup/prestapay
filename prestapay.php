@@ -138,6 +138,8 @@ class PrestaPay extends PaymentModule
             return;
         }
 
+        print_r($params);die;
+
         return $this->fetch('module:prestapay/views/templates/hook/payment_return.tpl');
     }
 }
